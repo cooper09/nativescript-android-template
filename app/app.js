@@ -9,17 +9,24 @@ const StackLayout = require('tns-core-modules/ui/layouts/stack-layout').StackLay
 app.run({       //Navigation Entry
     create: () => {
 
-        const layou = new StackLayout();
+        const layout = new StackLayout();
+        layout.className = 'base-layout';
+
         const label = new Label();
-        const button = new Button();
+        const button1 = new Button();
+        const button2 = new Button();
 
-        label.text = "Hello";
-        
-        button.text = "Click Me";
+        label.text = "Stinky"
+        label.className="base-color";
+        button1.text = "Click Me 1";
+        button2.text = "Click Me 2";
 
-        //layout.addChild(label)
+        layout.addChild(label)
+        layout.addChild(button1)
+        layout.addChild(button2)
+
         
-        return button;
+        return layout;
     }
 
 });
