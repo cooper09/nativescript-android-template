@@ -1,5 +1,6 @@
 .base-layout {
     background: #ccc;
+    margin-top: 24;
     margin: 12;
     padding: 12;
 }
@@ -7,4 +8,7 @@
     color: red;
     margin: 24;
     font-size: 24;
+}
+.base-button {
+    cursor: pointer;
 }
