@@ -1,8 +1,5 @@
-/* const onTap = () => {
-    alert("TaDa!!!")
-} */
+const onTap = () => {
+    alert("Yippee, old boy!!!")
+} 
 
-function onTap() {
-    alert("TaDa!!!")
-}
 exports.onTap = onTap;
