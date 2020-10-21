@@ -1,5 +1,3 @@
-const onTap = () => {
-    alert("Yippee, old boy!!!")
+exports.onTap = () => {
+    alert("Bind ME, baby!!!")
 } 
-
-exports.onTap = onTap;
