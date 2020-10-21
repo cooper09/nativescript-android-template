@@ -1,0 +1,6 @@
+<StackLayout class='base-layout'>
+
+    <Label text="My Label" class='base-color'/>
+    <Button text="Lets do this!" tap='onTap'/>
+
+</StackLayout>
