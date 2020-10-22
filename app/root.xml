@@ -1,7 +1,9 @@
+<Page loaded="onLoaded">
 <StackLayout class='base-layout'>
-
-    <Label text="StackLayout" class='base-color'/>
+    <Label text="StackLayout 3" class='base-color'/>
     <Button text="Lets do this!" tap='onTap'/>
+
+    <TextField text="{{data}}" />
     <Label text="Grid Layout" class='base-color'/>
     <GridLayout columns="*,*,*" rows="*,*,*,*,*" >
         
@@ -13,3 +15,4 @@
             <Button text="6" row="3" colSpan="3" style="background-color: #0099CC; margin: 5;"></Button>
     </GridLayout>
 </StackLayout>
+</Page>
