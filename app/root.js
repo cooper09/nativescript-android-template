@@ -2,7 +2,9 @@ const { CubicBezierAnimationCurve } = require('@nativescript/core/ui/animation')
 const { Observable}  = require('tns-core-modules/data/observable')
 const model = new Observable();
 
-let bayes = require('ml-naivebayes');
+const bayes = require('ml-naivebayes');
+const natural = require('natural');
+
 
 exports.onTap = () => {
     console.log("Bind ME, baby: ", model );
@@ -18,12 +20,21 @@ exports.onLoaded = args => {
 }  //end onLoaded
 
 const finishUp = () =>{
-    alert("OK, we're all done here...");
-   // const brain = new brain();
+   
+
 
 }//end finishUp
 
 const runML = () =>{
-    alert("Now lets apply our brain...");
-  //  const brain = new brain();  
+    alert("Let the Swami predict...");
+    const classifier = new natural.BayesClassifier();
+
+    //Traning Data
+    classifier.addDocument("life is but a dream","true")
+    classifier.addDocument("life is but peanut butter","false")
+    //Train
+    classifier.train();
+
+    //Predict
+    console.log("I predict: " + classifier.classify("a dream is stinky"))
 }

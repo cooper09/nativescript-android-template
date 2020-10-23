@@ -24,7 +24,10 @@
   "dependencies": {
     "@nativescript/core": "~7.0.0",
     "@nativescript/theme": "~2.3.0",
+    "brain.js": "^2.0.0-beta.2",
     "ml-naivebayes": "^4.0.0",
+    "nativescript-nodeify": "^0.8.0",
+    "natural": "^2.1.5",
     "node-uuid": "^1.4.8"
   },
   "devDependencies": {
