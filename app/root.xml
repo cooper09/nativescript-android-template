@@ -1,6 +1,6 @@
 <Page loaded="onLoaded">
 <StackLayout class='base-layout'>
-    <Label text="StackLayout 3" class='base-color'/>
+    <Label text="StackLayout - Smart Version" class='base-color'/>
     <Button text="Lets do this!" tap='onTap'/>
 
     <TextField text="{{data}}" />

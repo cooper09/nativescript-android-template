@@ -23,7 +23,9 @@
   "homepage": "https://github.com/NativeScript/nativescript-app-templates",
   "dependencies": {
     "@nativescript/core": "~7.0.0",
-    "@nativescript/theme": "~2.3.0"
+    "@nativescript/theme": "~2.3.0",
+    "ml-naivebayes": "^4.0.0",
+    "node-uuid": "^1.4.8"
   },
   "devDependencies": {
     "@nativescript/android": "7.0.0",
